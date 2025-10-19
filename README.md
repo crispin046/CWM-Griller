@@ -1,36 +1,75 @@
 <div align="center">
-  <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img width="1200" alt="CWM Griller Interface" src="./CWM Griller.png" />
 </div>
 
-# 🧠 CWM Griller — The AI That Remembers GitHub Workflows  
-**Powered by Google Genkit + Vertex AI**
+# 🧠 CWM Griller — Contextual Workflow Memory for Public GitHub Repositories  
+**Built with Google Genkit + Vertex AI | Build With AI Challenge (Genkit Track)**  
 
 ---
 
 ## 🧩 Problem
-Developers and open-source contributors lose hours reconstructing *context* behind commits, pull requests, and issues—especially in **public GitHub repositories**.  
-Each time someone revisits a repo they must piece together what changed, why, and what’s still pending.  
-This **context loss** slows onboarding, causes repeated work, and breaks project continuity.
+
+Developers and businesses rely heavily on open-source software, yet understanding **what a public repository actually does** often requires digging through commits, issues, and READMEs.  
+
+- New contributors struggle to grasp project purpose and recent activity.  
+- Product managers and teams waste time reviewing technical details.  
+- Organizations evaluating open-source tools have no quick way to extract insights.  
+
+There’s **no easy, AI-driven way** to summarize a repository’s context and history at a glance.  
 
 ---
 
-## 💡 Solution
-**CWM Griller (Contextual Workflow Memory)** turns public GitHub repos into **AI-powered memory systems**.  
-Using **Google Genkit** and **Vertex AI**, it automatically extracts, embeds, and summarizes repository activity so anyone can instantly recall what’s been done and why.
+## 💡 Solution — *CWM Griller (Contextual Workflow Memory)*
 
-Ask questions like:
-- “What changed in the last 5 commits?”  
-- “Summarize all open issues about API errors.”  
-- “What was the focus of the latest release?”
+**CWM Griller** is an AI-powered summarizer for public GitHub repositories.  
+It automatically builds a *contextual memory* of any repo and explains its purpose, activity trends, and focus — just by entering the repo URL.  
+
+Using **Google Genkit** pipelines and **Vertex AI**, CWM Griller:  
+- Fetches commits, PRs, and issues from any public GitHub repository.  
+- Embeds and analyzes this data to capture meaning and intent.  
+- Generates a **human-readable summary** — e.g.:  
+  > “This repository is a Python-based data visualization library focused on interactive charts. Recent commits improve performance and add TypeScript support.”  
 
 ---
 
 ## ⚙️ How It Works
-1. **Data Extraction** – Fetches commits, issues, and PRs from any public GitHub repo.  
-2. **Embedding & Memory Graph** – Uses Vertex AI embeddings to build a contextual graph.  
-3. **Recall & Summarization** – Genkit pipelines retrieve and summarize context using Gemini models.  
-4. **Query Interface** – Ask natural-language questions in a terminal or web UI.
 
-```bash
-> griller recall tensorflow/tensorflow
-"The last 5 commits focused on documentation updates and performance tuning."
+1. **User Input** → Paste any public GitHub repo link.  
+2. **Data Collection** → The app retrieves metadata, commits, and issues using GitHub’s REST API.  
+3. **AI Processing** →  
+   - Genkit orchestrates the pipeline for data retrieval and summarization.  
+   - Vertex AI embeddings capture semantic relationships.  
+   - Gemini models generate natural summaries of project purpose and recent work.  
+4. **Output** → A concise, contextual summary of the repository.  
+
+---
+
+## 🧰 Tech Stack
+
+| Component | Purpose |
+|------------|----------|
+| **Google Genkit** | Pipeline orchestration and AI workflow automation |
+| **Vertex AI (Gemini + Embeddings)** | Semantic understanding and summarization |
+| **GitHub REST API** | Source for public repo data |
+| **Node.js + TypeScript** | Backend implementation |
+| **AI Studio** | App interface and hosting |
+| **GitHub Codespaces** | Cloud-based runtime environment |
+
+---
+
+## 💼 Business & Workflow Relevance
+
+| Challenge | Real-World Use | Value |
+|------------|----------------|-------|
+| Slow repo analysis | Developer onboarding | Quick understanding of new codebases |
+| Poor visibility | Enterprise due diligence | AI-driven insights on dependencies |
+| Manual reading | Product research | Automatic summarization of competitor repos |
+
+---
+
+## 🚀 Try It Yourself
+
+### Option 1 — Run in GitHub Codespaces
+1. Open the repository in Codespaces → **Code ▸ Create Codespace on main**  
+2. Add your Gemini API key in `.env.local`:  
+
