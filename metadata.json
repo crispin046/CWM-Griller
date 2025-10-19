@@ -1,0 +1,5 @@
+{
+  "name": "CWM Griller",
+  "description": "CWM Griller (Contextual Workflow Memory Griller) is an AI assistant that remembers, reconstructs, and resumes work for teams. It builds a 'Context Memory Graph' using AI embeddings to provide summaries of recent work and answer questions about project history.",
+  "requestFramePermissions": []
+}
