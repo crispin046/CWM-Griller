@@ -5,6 +5,8 @@
 # 🧠 CWM Griller — Contextual Workflow Memory for Public GitHub Repositories  
 **Built with Google Genkit + Vertex AI | Build With AI Challenge (Genkit Track)**  
 
+🌐 **Live Application:** [https://cwm-griller-123372964295.us-west1.run.app/](https://cwm-griller-123372964295.us-west1.run.app/)
+
 ---
 
 ## 🧩 Problem
@@ -67,9 +69,4 @@ Using **Google Genkit** pipelines and **Vertex AI**, CWM Griller:
 
 ---
 
-## 🚀 Try It Yourself
-
-### Option 1 — Run in GitHub Codespaces
-1. Open the repository in Codespaces → **Code ▸ Create Codespace on main**  
-2. Add your Gemini API key in `.env.local`:  
 
